@@ -15,6 +15,6 @@ else
 		exit 1
 	else
 		echo "Starting with provided configuration '/conf/${CONFIG_FILENAME}'."
-		java -jar waves.jar /conf/${CONFIG_FILENAME}
+		java -Xms128m -Xmx1024m -jar waves.jar /conf/${CONFIG_FILENAME}
 	fi
 fi
